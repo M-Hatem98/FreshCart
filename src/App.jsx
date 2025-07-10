@@ -31,7 +31,7 @@ let queryClient = new QueryClient()
 let route = createBrowserRouter([
 
   {path:'' , element : <Layout/> , children : [
-    {index : true , element : <ProtectRoute><Home/></ProtectRoute>},
+    {index : true , element : <Home/>},
     {path: 'brands' , element : <ProtectRoute><Brands/></ProtectRoute>},
     {path: 'products' , element : <ProtectRoute><Products/></ProtectRoute>},
     {path: 'categories' , element : <ProtectRoute><Categories/></ProtectRoute>},
