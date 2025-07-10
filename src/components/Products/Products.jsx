@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { CartContext } from '../Context/CartContext'
 import toast from 'react-hot-toast'
 import { WishListContext } from '../Context/WishListContext'
+import { Helmet } from 'react-helmet'
 
 export default function Products() {
 
@@ -62,6 +63,9 @@ export default function Products() {
 
 
   return <>
+  <Helmet>
+    <title>Products</title>
+  </Helmet>
   <div className='min-h-screen'>
      <h1 className="text-3xl text-green-500 font-bold my-10">Check All Products</h1>
    <div className="flex flex-wrap gap-y-3">

@@ -4,6 +4,7 @@ import Spinner from '../Spinner/Spinner'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 export default function Cart() {
 
   let {numOfCartItems , updateCartProduct , clearCart , deleteCartProduct , products , totalCartPrice , isCartLoading , isdeleted} =useContext(CartContext)
@@ -51,6 +52,9 @@ if (!products || products.length == 0 ) {
  
  
  return <>
+ <Helmet>
+  <title>Cart</title>
+ </Helmet>
  {isdeleted ? <Spinner /> :  <div className='my-10'>
 
       <div className="flex justify-between items-center mb-5">

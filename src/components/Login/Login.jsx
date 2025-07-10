@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { userContext } from '../Context/userContext';
 import toast from 'react-hot-toast';
 import Spinner from '../Spinner/Spinner';
+import { Helmet } from 'react-helmet';
 
 export default function Login() {
     let [Loding , setLoding] =  useState(false)
@@ -74,6 +75,9 @@ export default function Login() {
 
 
     return <>
+    <Helmet>
+        <title>Login</title>
+    </Helmet>
     {Loding ? <Spinner/> : <div className="flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
             <div className="w-full max-w-md space-y-8">
                 <div className="bg-white shadow-md rounded-md p-6">

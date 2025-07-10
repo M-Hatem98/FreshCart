@@ -5,6 +5,7 @@ import { useParams, Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import Spinner from '../Spinner/Spinner'
 import axios from 'axios'
+import { Helmet } from 'react-helmet'
 
 export default function SubCategories() {
   const { id } = useParams()
@@ -36,7 +37,9 @@ if (!data || data.length === 0) {
 }
 
   return <>
-  
+  <Helmet>
+    <title>SubCategories</title>
+  </Helmet>
      <h1 className="text-3xl text-green-500 font-bold my-10">Sub Categories</h1>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-4">
       {data?.map((sub) => (

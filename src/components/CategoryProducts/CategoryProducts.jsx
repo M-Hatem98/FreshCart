@@ -80,7 +80,9 @@ export default function CategoryProducts() {
     }
     
   return <>
-     
+     <Helmet>
+     <title>{products[0]?.category?.name || 'Category'} Products</title>
+     </Helmet>
         <div className='my-10'>
           <h3 className='text-3xl text-green-500 font-medium'>{products[0]?.category?.name || 'Category'} </h3>
           <div className="flex flex-wrap">

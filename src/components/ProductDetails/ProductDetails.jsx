@@ -102,6 +102,9 @@ export default function ProductDetails() {
 
   return (
     <>
+    <Helmet>
+      <title>Product Details</title>
+    </Helmet>
       {productDetails ? (
         <div className="flex flex-wrap items-center mt-8">
           <div className="w-full md:w-1/4">

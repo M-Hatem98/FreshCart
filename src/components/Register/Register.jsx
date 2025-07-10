@@ -4,6 +4,7 @@ import axios from "axios";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { userContext } from "../Context/userContext";
+import { Helmet } from "react-helmet";
 export default function Register() {
    let {setloggedIn} =  useContext(userContext)
     let shecma = Yup.object().shape({
@@ -45,6 +46,9 @@ export default function Register() {
 
     return (
         <>
+        <Helmet>
+        <title>Register</title>
+        </Helmet>
             <div className="flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
                 <div className="w-full max-w-md space-y-8">
                     <div className="bg-white shadow-md rounded-md p-6">

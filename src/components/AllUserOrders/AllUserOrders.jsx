@@ -4,6 +4,7 @@ import { CartContext } from '../Context/CartContext'
 import Spinner from '../Spinner/Spinner'
 import axios from 'axios'
 import { jwtDecode } from 'jwt-decode';
+import { Helmet } from 'react-helmet'
 
 
 
@@ -34,7 +35,9 @@ export default function AllUserOrders() {
     getAllProducts()
     },[userId])
   return <>
-
+<Helmet>
+      <title>My Orders</title>
+    </Helmet>
 {allProducts?.length > 0 ? (
   <div className="space-y-8">
     <h1 className='text-3xl text-green-500 font-bold mt-8'>Check Your Orders</h1>

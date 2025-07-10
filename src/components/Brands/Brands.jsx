@@ -1,10 +1,15 @@
 import React from 'react'
 import RecentBrands from './../RecentBrands/RecentBrands';
+import { Helmet } from 'react-helmet';
 
 export default function Brands() {
-  return (
+  return <>
+    <Helmet>
+      <title>Brands</title>
+    </Helmet>
     <div className='mt-8'>
       <RecentBrands/>
     </div>
-  )
+  </>
+  
 }

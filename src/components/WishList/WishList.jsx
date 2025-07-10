@@ -6,6 +6,7 @@ import Spinner from './../Spinner/Spinner';
 import { CartContext } from './../Context/CartContext';
 import { toast } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 export default function WishList() {
 
@@ -91,6 +92,9 @@ if (!wishproducts || wishproducts.length == 0 ) {
 
 
   return <>
+  <Helmet>
+    <title>WishList</title>
+  </Helmet>
   {deleted ? <Spinner /> :  <div className="my-10 ">
     
     <div className="flex justify-between items-center mb-5">

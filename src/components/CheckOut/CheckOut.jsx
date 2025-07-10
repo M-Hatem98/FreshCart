@@ -5,6 +5,7 @@ import axios from 'axios';
 import { CartContext } from '../Context/CartContext';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 export default function CheckOut() {
     const [isOnline , setisOnline] = useState(true)
@@ -83,7 +84,9 @@ function detectPayment(val){
             onSubmit: detectPayment
         })
   return <>
-  
+  <Helmet>
+    <title>Check Out</title>
+  </Helmet>
    <div className="flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
             <div className="w-full max-w-md space-y-8">
                 <div className="bg-white shadow-md rounded-md p-6">

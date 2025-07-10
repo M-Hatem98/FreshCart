@@ -5,6 +5,7 @@ import * as Yup from 'yup'
 import { useFormik } from 'formik'
 import { useNavigate } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
+import { Helmet } from 'react-helmet'
 
 export default function ResetPassword() {
   let [Loding , setLoding] = useState(false)
@@ -38,6 +39,9 @@ export default function ResetPassword() {
     })
 
   return <>
+  <Helmet>
+    <title>Reset Password</title>
+  </Helmet>
   {Loding ? <Spinner/> : <div className="flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
                 <div className="w-full max-w-md space-y-8">
                     <div className="bg-white shadow-md rounded-md p-6">
