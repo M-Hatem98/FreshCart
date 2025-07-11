@@ -63,7 +63,7 @@ function App() {
 
  <RouterProvider router={route}></RouterProvider>
 <Toaster />
-<ReactQueryDevtools/>
+{/* <ReactQueryDevtools/> */}
 </WishListContextProvider>
   </CartContextProvider>
 

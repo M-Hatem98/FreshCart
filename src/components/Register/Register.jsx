@@ -28,7 +28,7 @@ export default function Register() {
             }
             setisLoding(false)
         }).catch((error)=>{
-            seterrMsg(error?.response?.data?.message)
+            seterrMsg(error?.response?.data?.errors?.msg)
             setisLoding(false)
         })
     }
