@@ -15,7 +15,7 @@ export default function CheckOut() {
 
     },[])
     function payOnline(val){
-  axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://fresh-cart-eta-liart.vercel.app/`,{
+  axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://fresh-cart-eta-liart.vercel.app`,{
     shippingAddress : val
   },{
     headers : {
