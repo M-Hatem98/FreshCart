@@ -5,7 +5,7 @@ import * as Yup from 'yup'
 import { useFormik } from 'formik'
 import { useNavigate } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 export default function ResetPassword() {
   let [Loding , setLoding] = useState(false)

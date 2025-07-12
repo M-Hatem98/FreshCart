@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { CartContext } from '../Context/CartContext'
 import toast from 'react-hot-toast'
 import { WishListContext } from '../Context/WishListContext'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 export default function Products() {
 

@@ -5,7 +5,7 @@ import { useParams, Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import Spinner from '../Spinner/Spinner'
 import axios from 'axios'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 export default function SubCategories() {
   const { id } = useParams()

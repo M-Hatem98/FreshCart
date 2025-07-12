@@ -5,7 +5,7 @@ import MainSlider from '../MainSlider/MainSlider';
 import BrandSlider from '../BrandSlider/BrandSlider';
 import { CartContext } from '../Context/CartContext';
 import { userContext } from '../Context/userContext';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
   let {loggedIn} = useContext(userContext)

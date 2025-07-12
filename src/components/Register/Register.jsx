@@ -4,7 +4,7 @@ import axios from "axios";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { userContext } from "../Context/userContext";
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 export default function Register() {
    let {setloggedIn} =  useContext(userContext)
     let shecma = Yup.object().shape({

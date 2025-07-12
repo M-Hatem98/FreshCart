@@ -4,7 +4,7 @@ import Spinner from '../Spinner/Spinner'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 export default function Cart() {
 
   let {numOfCartItems , updateCartProduct , clearCart , deleteCartProduct , products , totalCartPrice , isCartLoading , isdeleted} =useContext(CartContext)

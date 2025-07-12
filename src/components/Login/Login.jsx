@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { userContext } from '../Context/userContext';
 import toast from 'react-hot-toast';
 import Spinner from '../Spinner/Spinner';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 export default function Login() {
     let [Loding , setLoding] =  useState(false)

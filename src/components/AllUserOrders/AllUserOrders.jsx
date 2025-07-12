@@ -4,7 +4,7 @@ import { CartContext } from '../Context/CartContext'
 import Spinner from '../Spinner/Spinner'
 import axios from 'axios'
 import { jwtDecode } from 'jwt-decode';
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import notfound from '../../assets/error.svg'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 export default function Notfound() {
   return <>
   <Helmet>

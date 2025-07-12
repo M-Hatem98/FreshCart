@@ -25,6 +25,7 @@ import WishList from './components/WishList/WishList'
 import CategoryProducts from './components/CategoryProducts/CategoryProducts'
 import ResetPassword from './components/ResetPassword/ResetPassword'
 import ResetCode from './components/ResetCode/ResetCode'
+import { HelmetProvider } from 'react-helmet-async'
 
 let queryClient = new QueryClient()
 
@@ -53,6 +54,7 @@ function App() {
 
   return (
   <>
+<HelmetProvider>
 
   <QueryClientProvider client={queryClient}>
 
@@ -70,6 +72,7 @@ function App() {
   </UserContextProvider>
   </QueryClientProvider>
  
+</HelmetProvider>
   </>
      
   )

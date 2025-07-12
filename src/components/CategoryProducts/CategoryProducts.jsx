@@ -6,6 +6,7 @@ import Spinner from '../Spinner/Spinner'
 import { CartContext } from '../Context/CartContext'
 import { WishListContext } from '../Context/WishListContext'
 import toast from 'react-hot-toast'
+import { Helmet } from 'react-helmet-async'
 
 export default function CategoryProducts() {
   let {addToCart , addedproductid } = useContext(CartContext)

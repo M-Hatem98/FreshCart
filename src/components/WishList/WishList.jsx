@@ -6,7 +6,7 @@ import Spinner from './../Spinner/Spinner';
 import { CartContext } from './../Context/CartContext';
 import { toast } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 export default function WishList() {
 

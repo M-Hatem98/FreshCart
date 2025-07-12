@@ -5,7 +5,7 @@ import axios from 'axios';
 import { CartContext } from '../Context/CartContext';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 export default function CheckOut() {
     const [isOnline , setisOnline] = useState(true)
